@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>N Combined — Voiceover, Scripts &amp; Visuals</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f7fb;--surface:#fff;--text:#14162b;--muted:#6b6f8a;--line:#e3e5f0;--a:#5b5bf0;--b:#14b8a6;--soft:#eef0ff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0f1c;--surface:#161931;--text:#eef0ff;--muted:#9a9fc4;--line:#262a4a;--a:#8083ff;--b:#2dd4bf;--soft:#1e2250}}
+:root[data-theme="dark"]{--bg:#0d0f1c;--surface:#161931;--text:#eef0ff;--muted:#9a9fc4;--line:#262a4a;--a:#8083ff;--b:#2dd4bf;--soft:#1e2250}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1040px;margin:0 auto;padding:18px 20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.3px}
+.brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.4px}
+.pill{font-size:12px;font-weight:600;color:var(--b);background:var(--soft);padding:6px 12px;border-radius:99px}
+.hero{max-width:1040px;margin:0 auto;padding:18px 20px 8px;text-align:center}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:0 0 10px;letter-spacing:-1px}
+.hero h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:560px;margin:0 auto}
+nav{display:flex;justify-content:center;gap:8px;margin:24px auto 0;padding:0 20px;flex-wrap:wrap}
+nav button{border:1px solid var(--line);background:var(--surface);color:var(--text);padding:11px 22px;border-radius:12px;font:600 15px inherit;font-family:inherit;cursor:pointer}
+nav button[aria-selected="true"]{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;border-color:transparent}
+main{max-width:1040px;margin:20px auto 40px;padding:0 20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.tab{display:none}.tab.on{display:block}
+label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px}
+textarea,input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);font:15px inherit;font-family:inherit}
+textarea{min-height:130px;resize:vertical}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.btn{margin-top:16px;border:0;padding:12px 24px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;font:600 15px inherit;font-family:inherit;cursor:pointer}
+.btn.ghost{background:var(--soft);color:var(--a);margin-left:8px}
+h2{margin:0 0 4px;font-size:20px}.sub{color:var(--muted);margin:0 0 6px;font-size:14px}
+.premium{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0 4px}
+.pv{border:1px dashed var(--line);border-radius:14px;padding:14px;background:var(--bg)}
+.pv b{display:block}.pv span{font-size:12px;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--text);padding:7px 14px;border-radius:99px;font:600 13px inherit;font-family:inherit;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--soft);border-color:var(--a);color:var(--a)}
+.note{margin-top:16px;padding:14px;border-radius:12px;background:var(--soft);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:16px}
+.ph{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,var(--soft),var(--bg));border:1px solid var(--line)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 20px 30px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-label="N Combined logo"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b5bf0"/><stop offset="1" stop-color="#14b8a6"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#g)"/><path d="M11 29V11h3.6l9.4 12.2V11H29v18h-3.6L16 16.8V29z" fill="#fff"/><circle cx="29" cy="29" r="2.6" fill="#fff" opacity=".85"/></svg>
+    <div>N Combined<small>VOICE · SCRIPT · VISUALS</small></div>
+  </div>
+  <span class="pill">100% free</span>
+</header>
+<section class="hero">
+  <h1>Everything for your video, <span>in one place</span></h1>
+  <p>Voiceovers, long-form scripts and stock visuals for creators — all under one roof.</p>
+</section>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-t="voice">Voiceover</button>
+  <button role="tab" aria-selected="false" data-t="script">Script</button>
+  <button role="tab" aria-selected="false" data-t="visuals">Visuals</button>
+</nav>
+<main>
+<section id="voice" class="tab on card">
+  <h2>Voiceover</h2>
+  <p class="sub">Type your text, pick a language and voice, and listen instantly.</p>
+  <label for="vt">Your text</label>
+  <textarea id="vt">Welcome to N Combined. Voice, script and visuals, all in one place.</textarea>
+  <div class="row">
+    <div><label for="vl">Language</label><select id="vl"></select></div>
+    <div><label for="vv">Voice</label><select id="vv"></select></div>
+    <div><label for="vr">Speed</label><input id="vr" type="range" min=".6" max="1.6" step=".1" value="1"></div>
+  </div>
+  <button class="btn" id="play">▶ Play</button><button class="btn ghost" id="stop">■ Stop</button>
+  <h2 style="margin-top:26px;font-size:16px">Studio voices</h2>
+  <p class="sub">Five natural, non-robotic voices. These go live once the premium voice engine is connected.</p>
+  <div class="premium">
+    <div class="pv"><b>Studio 1</b><span>Warm · Narrator</span></div>
+    <div class="pv"><b>Studio 2</b><span>Deep · Documentary</span></div>
+    <div class="pv"><b>Studio 3</b><span>Bright · Explainer</span></div>
+    <div class="pv"><b>Studio 4</b><span>Calm · Storyteller</span></div>
+    <div class="pv"><b>Studio 5</b><span>Energetic · Ads</span></div>
+  </div>
+  <p class="sub" id="vnote"></p>
+</section>
+
+<section id="script" class="tab card">
+  <h2>Script</h2>
+  <p class="sub">Describe your video and get a complete script with strategy, delivered as a downloadable file.</p>
+  <label for="st">Topic or idea</label>
+  <input id="st" placeholder="e.g. The rise and fall of an ancient empire">
+  <div class="row">
+    <div><label for="sf">Format</label><select id="sf"><option>YouTube video</option><option>Documentary</option><option>Short / Reel</option><option>Podcast</option><option>Ad</option></select></div>
+    <div><label for="sl">Length</label><select id="sl"><option>10 minutes</option><option>30 minutes</option><option>1 hour</option><option>2 hours</option><option>Custom (long-form)</option></select></div>
+    <div><label for="sn">Tone</label><select id="sn"><option>Cinematic</option><option>Educational</option><option>Conversational</option><option>Dramatic</option></select></div>
+  </div>
+  <button class="btn" id="gen">Generate script</button>
+  <div class="note" id="snote" hidden></div>
+</section>
+
+<section id="visuals" class="tab card">
+  <h2>Visuals</h2>
+  <p class="sub">Search free pictures and videos for your edits.</p>
+  <div class="chips" id="kind"><button class="chip" aria-pressed="true" data-k="pic">Pictures</button><button class="chip" aria-pressed="false" data-k="vid">Videos</button></div>
+  <label for="vq">Search</label>
+  <input id="vq" placeholder="e.g. whale, city at night, mobile">
+  <div class="chips" id="ratios" hidden>
+    <button class="chip" aria-pressed="true">All ratios</button><button class="chip" aria-pressed="false">9:16 Vertical</button><button class="chip" aria-pressed="false">16:9 Wide</button><button class="chip" aria-pressed="false">1:1 Square</button>
+  </div>
+  <button class="btn" id="vs">Search</button>
+  <p class="sub" id="src" style="margin-top:14px">Pictures from free-licence libraries such as Pexels, Pixabay and Unsplash.</p>
+  <div class="note" id="vnote2" hidden></div>
+  <div class="grid" id="grid"></div>
+</section>
+</main>
+<footer>© N Combined · Free for creators</footer>
+<script>
+const $=s=>document.querySelector(s);
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('nav button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id===b.dataset.t));
+});
+let voices=[];
+function load(){
+  voices=(window.speechSynthesis&&speechSynthesis.getVoices())||[];
+  const langs=[...new Set(voices.map(v=>v.lang))].sort();
+  const cur=$('#vl').value;
+  $('#vl').innerHTML=langs.map(l=>'<option>'+l+'</option>').join('');
+  if(langs.includes(cur))$('#vl').value=cur;
+  fill();
+  $('#vnote').textContent=voices.length?'':'Your browser did not report any voices.';
+}
+function fill(){
+  $('#vv').innerHTML=voices.filter(v=>v.lang===$('#vl').value).map(v=>'<option>'+v.name+'</option>').join('');
+}
+if(window.speechSynthesis){load();speechSynthesis.onvoiceschanged=load}
+$('#vl').onchange=fill;
+$('#play').onclick=()=>{
+  if(!window.speechSynthesis)return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance($('#vt').value);
+  const v=voices.find(x=>x.name===$('#vv').value);
+  if(v){u.voice=v;u.lang=v.lang}
+  u.rate=parseFloat($('#vr').value);
+  speechSynthesis.speak(u);
+};
+$('#stop').onclick=()=>window.speechSynthesis&&speechSynthesis.cancel();
+document.querySelectorAll('#kind .chip').forEach(c=>c.onclick=()=>{
+  document.querySelectorAll('#kind .chip').forEach(x=>x.setAttribute('aria-pressed',x===c));
+  const vid=c.dataset.k==='vid';
+  $('#ratios').hidden=!vid;
+  $('#src').textContent=vid?'Videos from Pexels, Pixabay, Coverr and Mixkit.':'Pictures from free-licence libraries such as Pexels, Pixabay and Unsplash.';
+});
+document.querySelectorAll('#ratios .chip').forEach(c=>c.onclick=()=>{
+  document.querySelectorAll('#ratios .chip').forEach(x=>x.setAttribute('aria-pressed',x===c));
+});
+async function api(url,opt){const r=await fetch(url,opt);let d={};try{d=await r.json()}catch(e){}if(!r.ok)throw new Error(d.error||'Something went wrong');return d}
+const ai=p=>api('/api/script',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:p})}).then(d=>d.text);
+$('#gen').onclick=async()=>{
+ const topic=$('#st').value.trim(),n=$('#snote'),btn=$('#gen');n.hidden=false;
+ if(!topic){n.textContent='Please enter a topic first.';return}
+ btn.disabled=true;
+ const len=$('#sl').value,fmt=$('#sf').value,tone=$('#sn').value;
+ const count={'10 minutes':5,'30 minutes':10,'1 hour':16,'2 hours':30}[len]||40;
+ try{
+  n.textContent='Planning your script…';
+  const o=await ai('Plan a '+fmt+' script, length '+len+', tone '+tone+', on: '+topic+'. Reply with ONLY JSON: {"strategy":"audience, hook, pacing and retention strategy in 150-250 words","sections":[{"title":"","goal":"","words":600}]} with exactly '+count+' sections. The real hook must land in the first 15 seconds.');
+  const plan=JSON.parse(o.slice(o.indexOf('{'),o.lastIndexOf('}')+1));
+  let doc='# '+topic+'\n\n## Strategy\n'+plan.strategy+'\n\n## Script\n',prev='';
+  const titles=plan.sections.map(x=>x.title).join(' | ');
+  for(let i=0;i<plan.sections.length;i++){
+   const s=plan.sections[i];n.textContent='Writing section '+(i+1)+' of '+plan.sections.length+': '+s.title;
+   const t=await ai('Write section '+(i+1)+'/'+plan.sections.length+' ("'+s.title+'") of a '+tone+' '+fmt+' script on "'+topic+'". Goal: '+s.goal+'. About '+s.words+' words. Spoken narration only. Full outline: '+titles+'. '+(prev?'The previous section ended with: '+prev:'Open with a strong hook.'));
+   doc+='\n### '+s.title+'\n'+t+'\n';prev=t.slice(-300);
+  }
+  const url=URL.createObjectURL(new Blob([doc],{type:'text/markdown'}));
+  n.innerHTML='Done! <a download="script.md" href="'+url+'">Download your script</a>';
+ }catch(e){n.textContent='Error: '+e.message}
+ btn.disabled=false;
+};
+$('#vs').onclick=async()=>{
+ const q=$('#vq').value.trim(),n=$('#vnote2'),g=$('#grid');n.hidden=false;
+ if(!q){n.textContent='Type something to search.';return}
+ const k=document.querySelector('#kind .chip[aria-pressed="true"]').dataset.k;
+ const rt=document.querySelector('#ratios .chip[aria-pressed="true"]').textContent;
+ const r=rt.startsWith('9:16')?'v':rt.startsWith('16:9')?'w':rt.startsWith('1:1')?'s':'';
+ n.textContent='Searching…';g.innerHTML='';
+ try{
+  const d=await api('/api/visuals?kind='+k+'&q='+encodeURIComponent(q)+'&ratio='+r);
+  if(d.links){n.innerHTML=d.links}else if(!d.items.length){n.textContent='No results found.'}else{n.hidden=true}
+  g.innerHTML=d.items.map(i=>'<div>'+(k==='vid'?'<video src="'+i.preview+'" poster="'+i.thumb+'" controls muted preload="none" style="width:100%;border-radius:12px"></video>':'<img src="'+i.thumb+'" alt="" loading="lazy" style="width:100%;border-radius:12px">')+'<a href="'+i.url+'" target="_blank" rel="noopener" style="font-size:13px;color:var(--a)">Download · '+i.w+'×'+i.h+'</a></div>').join('');
+ }catch(e){n.textContent='Error: '+e.message}
+};
+</script>
+</body>
+</html>
